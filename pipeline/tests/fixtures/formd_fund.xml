@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<edgarSubmission>
+  <submissionType>D</submissionType>
+  <primaryIssuer>
+    <cik>0001888888</cik>
+    <entityName>Bluewater Ventures Fund II LP</entityName>
+    <issuerAddress>
+      <city>New York</city>
+      <stateOrCountry>NY</stateOrCountry>
+    </issuerAddress>
+    <entityType>Limited Partnership</entityType>
+  </primaryIssuer>
+  <offeringData>
+    <industryGroup>
+      <industryGroupType>Pooled Investment Fund</industryGroupType>
+    </industryGroup>
+    <federalExemptionsExclusions>
+      <item>06b</item>
+      <item>3C</item>
+      <item>3C.1</item>
+    </federalExemptionsExclusions>
+    <typesOfSecuritiesOffered>
+      <isEquityType>true</isEquityType>
+    </typesOfSecuritiesOffered>
+    <offeringSalesAmounts>
+      <totalOfferingAmount>50000000</totalOfferingAmount>
+      <totalAmountSold>30000000</totalAmountSold>
+    </offeringSalesAmounts>
+  </offeringData>
+</edgarSubmission>

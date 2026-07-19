@@ -1,0 +1,67 @@
+# Sourcing pipeline configuration.
+# Every assumption the workbook depends on lives here, not in code.
+
+user_agent:
+  # SEC fair-access policy requires a declared identity on every request.
+  name: Simon Kushkov
+  email: 5ben.kushkov@gmail.com
+
+thesis:
+  description: >
+    Capital-efficient B2B software companies raising or recently raised
+    Series A/B in the US. Preference for founder-led teams, recurring-revenue
+    models, and evidence of commercial traction (revenue signals, go-to-market
+    hiring) rather than pure R&D headcount.
+
+discovery:
+  # How many EDGAR quarterly indexes to walk back from today.
+  quarters_back: 3
+  # Amendments (D/A) restate earlier filings; skip them by default.
+  include_amendments: false
+  # Series A/B band, by total amount actually sold on the Form D.
+  min_amount_sold_usd: 3000000
+  max_amount_sold_usd: 60000000
+  # Form D industryGroupType values worth looking at. SaaS has no category
+  # of its own; it hides in these.
+  industry_include:
+    - Other Technology
+    - Computers
+    - Telecommunications
+    - Business Services
+    - Other
+  # Any federal exemption starting with 3C means an investment company,
+  # not an operating business.
+  fund_exemption_prefix: "3C"
+
+jobs:
+  # Re-probe a company's job board only after this many days.
+  probe_ttl_days: 7
+  # How many token guesses to try per company per provider.
+  max_probe_variants: 3
+  # Titles counted as commercial (go-to-market) roles.
+  commercial_title_keywords:
+    - sales
+    - account executive
+    - account manager
+    - business development
+    - marketing
+    - customer success
+    - revenue
+    - partnerships
+    - growth
+
+arr_model:
+  # SaaS Capital 2025 survey: median revenue per employee for private SaaS
+  # $129,724; $94,444 for equity-backed companies in the $1-3M ARR band.
+  arr_per_fte_low: 95000
+  arr_per_fte_mid: 130000
+  arr_per_fte_high: 175000
+  # Open roles as a share of current headcount, used to back into
+  # headcount from a public job board.
+  open_roles_pct_of_headcount_low: 0.05
+  open_roles_pct_of_headcount_high: 0.15
+
+scoring:
+  # Qualitative scoring is done in-session by Claude Code, not via API.
+  model: Claude (in-session, Claude Code)
+  batch_size: 50

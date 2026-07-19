@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<edgarSubmission>
+  <schemaVersion>X0708</schemaVersion>
+  <submissionType>D</submissionType>
+  <primaryIssuer>
+    <cik>0001999999</cik>
+    <entityName>Ledgerline Software Inc.</entityName>
+    <issuerAddress>
+      <street1>500 Main St</street1>
+      <city>Durham</city>
+      <stateOrCountry>NC</stateOrCountry>
+      <zipCode>27701</zipCode>
+    </issuerAddress>
+    <entityType>Corporation</entityType>
+    <yearOfInc>
+      <withinFiveYears>true</withinFiveYears>
+      <value>2022</value>
+    </yearOfInc>
+  </primaryIssuer>
+  <relatedPersonsList>
+    <relatedPersonInfo>
+      <relatedPersonName>
+        <firstName>Dana</firstName>
+        <lastName>Whitfield</lastName>
+      </relatedPersonName>
+      <relatedPersonRelationshipList>
+        <relationship>Executive Officer</relationship>
+        <relationship>Director</relationship>
+      </relatedPersonRelationshipList>
+    </relatedPersonInfo>
+    <relatedPersonInfo>
+      <relatedPersonName>
+        <firstName>Marcus</firstName>
+        <lastName>Oyelaran</lastName>
+      </relatedPersonName>
+      <relatedPersonRelationshipList>
+        <relationship>Executive Officer</relationship>
+      </relatedPersonRelationshipList>
+    </relatedPersonInfo>
+  </relatedPersonsList>
+  <offeringData>
+    <industryGroup>
+      <industryGroupType>Other Technology</industryGroupType>
+    </industryGroup>
+    <issuerSize>
+      <revenueRange>$1,000,001 - $5,000,000</revenueRange>
+    </issuerSize>
+    <federalExemptionsExclusions>
+      <item>06b</item>
+    </federalExemptionsExclusions>
+    <typeOfFiling>
+      <newOrAmendment>
+        <isAmendment>false</isAmendment>
+      </newOrAmendment>
+      <dateOfFirstSale>
+        <value>2026-05-12</value>
+      </dateOfFirstSale>
+    </typeOfFiling>
+    <typesOfSecuritiesOffered>
+      <isEquityType>true</isEquityType>
+    </typesOfSecuritiesOffered>
+    <offeringSalesAmounts>
+      <totalOfferingAmount>12000000</totalOfferingAmount>
+      <totalAmountSold>9500000</totalAmountSold>
+      <totalRemaining>2500000</totalRemaining>
+    </offeringSalesAmounts>
+  </offeringData>
+</edgarSubmission>
